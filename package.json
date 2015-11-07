@@ -1,0 +1,20 @@
+{
+  "name": "",
+  "license": "MIT",
+  "author": "",
+  "version": "",
+  "decscription": "",
+  "keywords": "",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "",
+    "npm": ""
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
