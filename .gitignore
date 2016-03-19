@@ -1,18 +1,53 @@
-### build ###
-dist
+### logs ###
+logs
+*.log
 
 ### node ###
+dist
+coverage
+gulp-cache
 node_modules
-npm-debug.log
-
-### Otto ###
-.otto
+jspm_packages
+npm-debug.log*
+bower_components
 
 ### OSX ###
 .DS_Store
 
+### Otto ###
+.otto/
+
+### Packer ###
+packer_cache/
+*.box
+
+### Sass ###
+.sass-cache/
+
+### Sublime Text ###
+*.sublime-*
+
+### tags ###
+tags
+.tags
+
+### temp ###
+.tmp
+*.tmp
+
+### Tern ###
+.tern-project
+
 ### Vagrant ###
 .vagrant
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
 
 ### Visual Studio Code ###
 .vscode
