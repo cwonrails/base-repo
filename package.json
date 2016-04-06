@@ -11,6 +11,7 @@
   "private": "true",
   "repository": {},
   "scripts": {
+    "deps": "david u",
     "test": "ava"
   },
   "dependencies": {},
@@ -33,7 +34,8 @@
     "postcss-csso": "1.0.1",
     "postcss-flexibility": "1.0.3",
     "stylefmt": "3.0.0",
-    "stylelint": "5.2.1"
+    "stylelint": "5.2.1",
+    "stylelint-config-standard": "4.0.1"
   },
   "engines": {
     "node": ">=4.3.2 <5 || >=5.7.1 <6",
