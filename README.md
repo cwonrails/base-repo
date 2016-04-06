@@ -1,3 +1,3 @@
-# Opinionated starter template for new projects.
+https://david-dm.org/cwonrails/base-repo.svg
 
-*Note*: _Includes MIT License. Make sure to [research](http://choosealicense.com/) if this is the right license for your project!_
+Opinionated boilerplate for front-end projects.
