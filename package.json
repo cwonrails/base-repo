@@ -1,40 +1,53 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
-  "license": "",
-  "author": {},
+  "name": "base-repo",
+  "version": "2.0.0",
+  "description": "Opinionated boilerplate for front-end projects",
+  "license": "MIT",
+  "author": {
+    "name": "Chris Watson",
+    "email": "cwonrails@gmail.com",
+    "url": "https://chriswatso.io"
+  },
+  "private": "true",
   "repository": {},
   "scripts": {
     "test": "ava"
   },
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^6.3.4",
-    "ava": "^0.13.0",
-    "babel-core": "^6.7.2",
-    "babel-eslint": "^6.0.0-beta.6",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "browser-sync": "^2.11.1",
-    "cssnano": "^3.5.2",
-    "eslint": "^2.4.0",
+    "autoprefixer": "6.3.6",
+    "ava": "0.13.0",
+    "babel-core": "6.7.4",
+    "babel-eslint": "6.0.2",
+    "babel-preset-es2015": "6.6.0",
+    "browser-sync": "2.11.2",
+    "cssfmt": "morishitter/cssfmt#develop",
+    "david": "7.0.1",
+    "eslint": "2.7.0",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-ava": "^0.10.0",
-    "gulp-eslint": "^2.0.0",
-    "gulp-htmlmin": "^1.3.0",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-postcss": "^6.1.0",
-    "stylelint": "^5.1.0",
-    "stylelint-config-standard": "^4.0.1"
+    "gulp-ava": "0.10.0",
+    "gulp-babel": "6.1.2",
+    "gulp-eslint": "2.0.0",
+    "gulp-htmlmin": "1.3.0",
+    "gulp-imagemin": "2.4.0",
+    "gulp-postcss": "6.1.0",
+    "postcss-csso": "1.0.1",
+    "postcss-flexibility": "1.0.3",
+    "stylelint": "5.2.1"
   },
   "engines": {
-    "node": ">=4.3.2 <5 || >=5.7.1 <6"
+    "node": ">=4.3.2 <5 || >=5.7.1 <6",
+    "npm": ">=2.15.1 < 3 || >=3.8.3 < 4"
   },
   "babel": {
     "presets": [
-      "es2015",
-      "stage-0"
+      "es2015"
+    ]
+  },
+  "david": {
+    "ignore": [
+      "cssfmt",
+      "gulp"
     ]
   },
   "eslintConfig": {
@@ -42,7 +55,11 @@
     "extends": "eslint:recommended"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard"
-  },
-  "private": "true"
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "font-family-name-quotes": "null",
+      "function-url-quotes": "null",
+      "string-quotes": "null"
+    }
+  }
 }
