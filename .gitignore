@@ -24,6 +24,9 @@ packer_cache/
 ### Sass ###
 .sass-cache/
 
+### Simpla ###
+simpla-api-key.txt
+
 ### Sublime Text ###
 *.sublime-*
 
