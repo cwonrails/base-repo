@@ -3,6 +3,7 @@
 import gulp from 'gulp';
 
 // CSS
+import cssnano from 'cssnano';
 import flexibility from 'postcss-flexibility';
 import postcss from 'gulp-postcss';
 import stylelint from 'stylelint';
@@ -19,26 +20,48 @@ import browserSync from 'browser-sync';
 
 // Set up paths
 const paths = {
+  css: {
+    src: 'src/css/*.css',
+    dest: 'dist/css/'
+  },
   html: {
     src: 'src/*.html',
     dest: 'dist/'
   },
-  images: {
-    src: 'src/img/*',
-    dest: 'dist/img/'
-  },
-  scripts: {
+  js: {
     src: 'src/js/*.js',
     dest: 'dist/js/'
-  },
-  styles: {
-    src: 'src/css/*.css',
-    dest: 'dist/css/'
   }
 };
 
-// Minify HTML
-export function html() {
+// Lint CSS
+
+// Lint HTML
+
+
+// Lint JavaScript
+
+
+// Define PostCSS processor options
+const processors = [
+  flexibility,
+  cssnano({
+    discardUnused: false,
+    mergeIndents: false,
+    reduceIndents: false,
+    zindex: false
+  })
+];
+
+// Build CSS for production
+export function buildcss() {
+  return gulp.src(paths.css.src)
+    .pipe(postcss)(processors)
+    .pipe(gulp.dest(paths.css.dest));
+}
+
+// Build HTML for production
+export function buildhtml() {
   return gulp.src(paths.html.src)
     .pipe(htmlmin({
       // caseSensitive: true,
@@ -58,14 +81,10 @@ export function html() {
     .pipe(gulp.dest(paths.html.dest));
 }
 
-export function scripts() {
-  return gulp.src(paths.scripts.src)
+// Build JavaScript for production
+export function buildjs () {
+  return gulp.src(paths.js.src)
     .pipe(babel())
-    .pipe(gulp.dest(paths.scripts.dest));
+    .pipe(gulp.dest(paths.js.dest));
 }
 
-export function styles() {
-  return gulp.src(paths.styles.src)
-    .pipe(postcss)()
-    .pipe(gulp.dest(paths.styles.dest));
-}
