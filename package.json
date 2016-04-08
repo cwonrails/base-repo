@@ -16,7 +16,9 @@
   "scripts": {
     "test": "ava"
   },
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "4.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "ava": "0.14.0",
