@@ -1,59 +1,24 @@
-### logs ###
-logs
-*.log
-
-### node ###
-build
-coverage
-gulp-cache
-node_modules
-jspm_packages
-npm-debug.log*
+### Bower ###
 bower_components
 
-### OSX ###
+### JetBrains ###
+.idea
+
+### Linux ###
+*~
+
+### Logs ###
+*.log*
+
+### Node.js ###
+node_modules
+
+### OSX #####
 .DS_Store
 
-### Otto ###
-.otto/
-
-### Packer ###
-packer_cache/
-*.box
-
-### Sass ###
-.sass-cache/
-
-### Simpla ###
-simpla-api-key.txt
-
 ### Sublime Text ###
-*.sublime-*
-
-### tags ###
-tags
-.tags
-
-### temp ###
-.tmp
-*.tmp
-
-### Tern ###
-.tern-project
-
-### Vagrant ###
-.vagrant
-
-### Vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
+*.sublime-project
+*.sublime-workspace
 
 ### Visual Studio Code ###
 .vscode
-
-### WebStorm ###
-.idea
