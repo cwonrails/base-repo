@@ -23,7 +23,6 @@
     "build": "npm run build:css && npm run build:html && npm run build:js",
     "build:css": "postcss -c postcss-config.json",
     "build:html": "html-minifier -c html-minifier-config.json -o dist/index.html src/index.html",
-    "build:images": "imagemin src/img/* dist/images/* -p",
     "build:js": "npm run babel && npm run uglify",
     "copy": "cp src/!{index.html,css,img,js,vendor} dist/",
     "deps": "david u",
