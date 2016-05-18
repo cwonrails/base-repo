@@ -1,7 +1,7 @@
 {
   "use": ["postcss-import", "autoprefixer", "postcss-flexibility", "cssnano"],
   "local-plugins": "true",
-  "output": "dist/css/main.min.css",
+  "output": "dist/css/main.css",
   "input": "src/css/main.css",
   "postcss-import": {},
   "autoprefixer": {

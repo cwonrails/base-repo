@@ -31,7 +31,7 @@
     "lint:css": "stylelint src/css/*.css",
     "lint:html": "htmlhint src/index*.html",
     "lint:js": "eslint src/js/*.js",
-    "uglify": "uglifyjs -c -m -o dist/js/main.min.js dist/js/main.min.js"
+    "uglify": "uglifyjs -c -m -o dist/js/main.min.js dist/js/main.js"
   },
   "dependencies": {
     "flexibility": "^1.0.5",
