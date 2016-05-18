@@ -1,6 +1,6 @@
 {
   "name": "base-repo",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Opinionated boilerplate for front-end projects",
   "license": "MIT",
   "author": {
@@ -20,10 +20,11 @@
   "scripts": {
     "babel": "babel src/js --out-file dist/js/index.js",
     "browser-sync": "browser-sync start -c browsersync-config.js",
-    "build": "npm run build:css && npm run build:html && npm run build:js && npm run vendor",
+    "build": "npm run build:css && npm run build:html && npm run build:js && npm run build:vendor",
     "build:css": "postcss -c postcss-config.json",
     "build:html": "html-minifier -c html-minifier-config.json -o dist/index.html src/index.html",
     "build:js": "npm run babel && npm run uglify",
+    "build:vendor": "npm run vendor",
     "copy": "cp src/!{index.html,css,img,js,vendor} dist/",
     "lint": "npm run lint:css && npm run lint:html && npm run lint:js",
     "lint:css": "stylelint src/css/*.css",
