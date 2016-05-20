@@ -1,10 +1,9 @@
 {
   "parserOptions": {
-    "ecmaVersion": "6"
-  },
-  "env": {
-    "browser": true,
-    "node": true
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "modules": true
+    }
   },
   "extends": "eslint:recommended"
 }
