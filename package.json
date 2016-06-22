@@ -54,7 +54,7 @@
     "postcss-flexibility": "^1.0.3",
     "postcss-import": "^8.1.2",
     "stylelint": "^6.4.1",
-    "stylelint-config-standard": "^8.0.0",
+    "stylelint-config-standard": "^9.0.0",
     "uglify-js": "^2.6.2"
   }
 }
