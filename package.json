@@ -35,21 +35,27 @@
     "uglify": "uglifyjs -c -m -o dist/js/index.js dist/js/index.js",
     "vendor": "npm run vendor:css && npm run vendor:js && cp -R src/vendor dist/",
     "vendor:css": "cp node_modules/normalize.css/normalize.css src/vendor/css",
-    "vendor:js": "cp node_modules/flexibility/dist/flexibility.js src/vendor/js"
+    "vendor:js": "cp node_modules/flexibility/flexibility.js src/vendor/js"
   },
   "dependencies": {
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "tachyons": "^4.5.3"
   },
   "devDependencies": {
+    "autoprefixer": "^6.5.0",
     "babel-cli": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "browser-sync": "^2.17.0",
     "cssnano": "^3.7.6",
+    "david": "^9.0.0",
+    "eslint": "^3.7.1",
+    "flexibility": "^2.0.1",
     "html-minifier": "^3.1.0",
     "htmlhint": "^0.9.13",
     "postcss": "^5.2.4",
     "postcss-cli": "^2.6.0",
-    "postcss-easy-import": "^1.0.1",
+    "postcss-flexibility": "^1.1.0",
+    "postcss-import": "^8.1.2",
     "stylelint": "^7.3.1",
     "stylelint-config-standard": "^13.0.2",
     "uglify-js": "^2.7.3"
