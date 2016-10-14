@@ -1,11 +1,5 @@
-### Bower ###
-bower_components
-
 ### JetBrains ###
 .idea
-
-### Linux ###
-*~
 
 ### Logs ###
 *.log*
@@ -16,9 +10,3 @@ node_modules
 ### OSX #####
 .DS_Store
 
-### Sublime Text ###
-*.sublime-project
-*.sublime-workspace
-
-### Visual Studio Code ###
-.vscode
