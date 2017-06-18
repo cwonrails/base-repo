@@ -1,12 +1,7 @@
-### JetBrains ###
 .idea
-
-### Logs ###
-*.log*
-
-### Node.js ###
-node_modules
-
-### OSX #####
+.vscode
 .DS_Store
-
+.yarnclean
+node_modules
+npm-debug.log
+yarn-error.log

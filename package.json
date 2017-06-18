@@ -1,7 +1,7 @@
 {
   "name": "base-repo",
-  "version": "7.0.0",
-  "description": "Opinionated boilerplate for front-end projects",
+  "version": "9.0.0",
+  "description": "Base repository structure for new projects",
   "license": "MIT",
   "author": {
     "name": "Chris Watson",
@@ -14,12 +14,10 @@
     "url": "https://github.com/cwonrails/base-repo"
   },
   "engines": {
-    "node": ">=6.7.0"
+    "node": ">=8",
+    "npm": ">=5"
   },
   "scripts": {},
   "dependencies": {},
-  "devDependencies": {
-    "standard": "^8.5.0",
-    "stylelint": "^7.5.0"
-  }
+  "devDependencies": {}
 }
